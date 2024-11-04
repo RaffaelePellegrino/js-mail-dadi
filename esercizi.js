@@ -81,8 +81,24 @@
 // elevazioneCubica(x,y)
 
 // esercizio 7 snack (bonus)
-let i = 2
-while(i<=1000){
-    console.log(i*i);
-    i += 1;
+// let i = 2
+// while(i<=1000){
+//     console.log(i*i);
+//     i += 1;
+// }
+
+// esercizio 9 snack
+let somma= 0
+// let iterazioni=[]
+let iterazioni=0
+for(let i = 1; i <= 10; i++){
+    somma += i;
+    // iterazioni.push(i);
+    iterazioni += 1;
 }
+// let media = somma / iterazioni.length
+let media = somma / iterazioni
+
+console.log(somma)
+console.log(media)
+

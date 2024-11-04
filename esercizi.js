@@ -41,3 +41,23 @@
 //     console.log(tiroUtente+ " "+"il tuo tiro")
 //     console.log("E' un pareggio")
 // }
+
+
+// esercizio snack 5 (bonus)
+
+const lista=[]
+
+let x= parseInt(prompt("quanti numeri vuoi inserire?"))
+
+function daInserire(lunghezza){
+    for(let i=0; i<lunghezza;i++){
+        let numero=parseInt(prompt("insrisci un numero"));
+        
+        if (!isNaN(numero) && numero % 2 != 0){
+                lista.push(numero);
+        }
+    }
+}
+
+daInserire(x)
+console.log(lista)

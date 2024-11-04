@@ -45,19 +45,37 @@
 
 // esercizio snack 5 (bonus)
 
-const lista=[]
+// const lista=[]
 
-let x= parseInt(prompt("quanti numeri vuoi inserire?"))
+// let x= parseInt(prompt("quanti numeri vuoi inserire?"))
 
-function daInserire(lunghezza){
-    for(let i=0; i<lunghezza;i++){
-        let numero=parseInt(prompt("insrisci un numero"));
+// function daInserire(lunghezza){
+//     for(let i=0; i<lunghezza;i++){
+//         let numero=parseInt(prompt("insrisci un numero"));
         
-        if (!isNaN(numero) && numero % 2 != 0){
-                lista.push(numero);
-        }
+//         if (!isNaN(numero) && numero % 2 != 0){
+//                 lista.push(numero);
+//         }
+//     }
+// }
+
+// daInserire(x)
+// console.log(lista)
+
+// esercizio snack 6 (bonus)
+
+function elevazioneCubica (min,max){
+    for(let i=min; i <= max; i++){
+        let numero = (i * i * i);
+        console.log(numero);
     }
 }
 
-daInserire(x)
-console.log(lista)
+let x= parseInt(prompt("Primo numero da elevare:"))
+let y= parseInt(prompt("Ultimo numero da elevare(non puà essere più piccolo del primo):"))
+
+while (x>y) {
+    y = parseInt(prompt("Ultimo numero da elevare(non puà essere più piccolo del primo):"))
+}
+
+elevazioneCubica(x,y)

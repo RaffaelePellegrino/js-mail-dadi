@@ -64,18 +64,25 @@
 
 // esercizio snack 6 (bonus)
 
-function elevazioneCubica (min,max){
-    for(let i=min; i <= max; i++){
-        let numero = (i * i * i);
-        console.log(numero);
-    }
+// function elevazioneCubica (min,max){
+//     for(let i=min; i <= max; i++){
+//         let numero = (i * i * i);
+//         console.log(numero);
+//     }
+// }
+
+// let x= parseInt(prompt("Primo numero da elevare:"))
+// let y= parseInt(prompt("Ultimo numero da elevare(non puà essere più piccolo del primo):"))
+
+// while (x>y) {
+//     y = parseInt(prompt("Ultimo numero da elevare(non puà essere più piccolo del primo):"))
+// }
+
+// elevazioneCubica(x,y)
+
+// esercizio 7 snack (bonus)
+let i = 2
+while(i<=1000){
+    console.log(i*i);
+    i += 1;
 }
-
-let x= parseInt(prompt("Primo numero da elevare:"))
-let y= parseInt(prompt("Ultimo numero da elevare(non puà essere più piccolo del primo):"))
-
-while (x>y) {
-    y = parseInt(prompt("Ultimo numero da elevare(non puà essere più piccolo del primo):"))
-}
-
-elevazioneCubica(x,y)
